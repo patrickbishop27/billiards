@@ -1,5 +1,12 @@
-%Iterative Billiard map for real case. 
-
+%Iterative Billiard map for real value case. 
+% INPUT: input = [r, theta] where r = cos(gamma) and theta is parameter value 
+%                corresponging to initial point on boundary.
+%        coefx = the coefficients for the cosine terms in the x coordinate 
+%        for the table boundary.
+%        coefy = coefficients for the sine terms in the y coordinate for
+%        the table boundary.
+% OUTPUT: [rhat, thetahat] for the next point of contact of the billiard ball 
+%         with the boundary.
 function output = RealF(input,coefx,coefy)
 
 th1 = input(2);
