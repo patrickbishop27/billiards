@@ -1,6 +1,14 @@
-function [v,flag] = r2v2(r,theta1,dz);
-
-
+% r2v2 converts r value to the vector v which is the vector pointing in the
+% direction of the billaird balls path. 
+% 
+% INPUT: r = cosine of the angle gamma where gamma is angle between the
+%        tangent line at the point on the boundary and the vector v. 
+%        theta1 = parameter value between 0 and 1 corresponding to the point 
+%        on the boundary. 
+%        dz = tangent vector at the point on the boundary. 
+%OUTPUT: v = vector pointing in the direction of the path of the billiard
+%        ball.
+function v = r2v2(r,theta1,dz)
 
 gamma = acos(r);
 vguess = [-sin(2*pi*theta1+gamma);cos(2*pi*theta1+gamma)];

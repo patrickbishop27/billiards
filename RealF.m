@@ -50,16 +50,12 @@ dG =@(x) F(x)*ddeflat(x)+deflat(x)*dF(x);
         
     end
     
-%th2 = mod(newtval(2),1);
 th2 = newtval(2);
 [~,dz2] = Bill_Table(th2,coefx,coefy);	
 
-r2 = v2r(th2,v,dz2); 
-
+r2 = v2r(v,dz2); 
 output = [r2;th2];
 
-%maxresid
-%maxk
 
 %%%%			
 function [tell,th2] = nextstepell(th1,v1,a,b)
