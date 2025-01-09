@@ -1,3 +1,11 @@
+% INPUT: t = parameter value corresponding to point on the billiard table. 
+%            Value between 0 and 1. 
+%        coefx = the coefficients for the cosine terms in the x coordinate 
+%        for the table boundary.
+%        coefy = coefficients for the sine terms in the y coordinate for
+%        the table boundary.
+%OUTPUT: z = [x,y] coordinates of the point on the billiard table
+%        dz = [dx,dy] tangent line at the point on the billiard table.
 function [z,dz] = Bill_Table(t,coefx,coefy)
 
     tpi = 2*pi; 
